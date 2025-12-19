@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Actualizar entrenador</h1>
+  <form>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" [(ngModel)]="entrenador.nombre" id="nombre" name="nombre" aria-describedby="nombreHelp">
+      <div id="nombreHelp" class="form-text">No debe quedar el campo vacio.</div>
+    </div>
+    <div class="mb-3">
+      <label for="nacionalidad" class="form-label">Nacionalidad</label>
+      <input type="text" class="form-control" [(ngModel)]="entrenador.nacionalidad" id="nacionalidad" name="nacionalidad">
+    </div>
+    <div class="mb-3">
+      <label for="experiencia" class="form-label">Experiencia</label>
+      <input type="number" class="form-control" [(ngModel)]="entrenador.experiencia" id="experiencia" name="experiencia">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="actualizar()">Actualizar</button>&nbsp;
+    <button type="button" class="btn btn-secondary" routerLink="/entrenadores">Cancelar</button>
+  </form>
+</div>

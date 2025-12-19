@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Eliminar entrenador</h1>
+  <form>
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre:</label>
+    <input type="text" [(ngModel)]="entrenador.nombre" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+    <div id="nombreHelp" class="form-text">El campo no debe de quedar vacio</div>
+  </div>
+  <div class="mb-3">
+    <label for="nacionalidad" class="form-label">Nacionalidad</label>
+    <input type="text" [(ngModel)]="entrenador.nacionalidad" class="form-control" id="nacionalidad" name="nacionalidad">
+  </div>
+  <div class="mb-3">
+    <label for="experiencia" class="form-label">Experiencia</label>
+    <input type="number" [(ngModel)]="entrenador.experiencia" class="form-control" id="experiencia" name="experiencia">
+  </div>
+  <button type="button" class="btn btn-danger" (click)="eliminar()">Eliminar</button>&nbsp;
+  <button type="button" class="btn btn-secondary" routerLink="/entrenadores">Cancelar</button>
+</form>
+</div>

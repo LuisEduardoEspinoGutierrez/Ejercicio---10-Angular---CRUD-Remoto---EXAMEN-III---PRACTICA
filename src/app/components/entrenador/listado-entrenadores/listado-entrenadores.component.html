@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Listado Entrenadores</h1>
+  <!-- <button type="button" class="btn btn-success" (click)="logout()">Logout</button>
+  -->
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Nacionalidad</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (entrenador of entrenadores; track entrenador.id) {
+    <tr>
+      <th scope="row">{{ entrenador.id }}</th>
+      <td>{{ entrenador.nombre }}</td>
+      <td>{{ entrenador.nacionalidad }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" [routerLink]="['/entrenadores/editar',entrenador.id]">Actualizar</button>&nbsp;
+        <button type="button" class="btn btn-danger" [routerLink]="['/entrenadores/eliminar',entrenador.id]">Eliminar</button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>
+</div>
+
