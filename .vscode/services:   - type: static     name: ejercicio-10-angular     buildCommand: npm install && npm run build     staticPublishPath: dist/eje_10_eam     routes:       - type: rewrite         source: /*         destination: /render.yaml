@@ -1,9 +1,0 @@
-services:
-  - type: static
-    name: ejercicio-10-angular
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist/eje_10_eam
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
