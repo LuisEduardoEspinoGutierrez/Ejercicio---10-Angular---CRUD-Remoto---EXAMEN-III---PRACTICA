@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = "https://practica-viii-examen-ii-orm-y-jwt.onrender.com";
+  private apiUrl = "https://ligas-deportivas.onrender.com";
 
   constructor(private http: HttpClient) { }
 
