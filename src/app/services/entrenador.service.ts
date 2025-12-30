@@ -10,7 +10,7 @@ import { AuthService } from './auth.service';
 
 export class EntrenadorService {
 
-  private apiUrl = "https://practica-viii-examen-ii-orm-y-jwt.onrender.com";
+  private apiUrl = "https://ligas-deportivas.onrender.com";
 
   constructor(private http:HttpClient, private authService:AuthService) { }
 
